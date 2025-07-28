@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Spion-Spiel</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="mainMenu" class="screen">
+    <h1>Spion-Spiel</h1>
+    <div class="section">
+      <label for="addPlayerInput">Spieler hinzufügen:</label><br />
+      <input type="text" id="addPlayerInput" placeholder="Name eingeben" />
+      <button id="addPlayerBtn">Hinzufügen</button>
+      <button id="clearPlayersBtn">Alle löschen</button>
+      <ul id="playersList"></ul>
+    </div>
+
+    <div class="section">
+      <label for="categorySelect">Kategorie wählen:</label><br />
+      <select id="categorySelect">
+        <option value="Tiere">Tiere</option>
+        <option value="Orte">Orte</option>
+        <option value="Fahrzeuge">Fahrzeuge</option>
+        <option value="Filme">Filme</oclass=""ption>
+        <option value="Berufe">Berufe</option>
+        <option value="Essen">Essen</option>
+        <option value="Promis">Promis</option>
+      </select>
+    </div>
+
+    <div class="section">
+      <label for="spyCountInput">Anzahl der Spione:</label><br />
+      <input type="number" id="spyCountInput" min="1" />
+    </div>
+
+    <button id="startGameBtn">Spiel starten</button>
+    <p id="errorMessage" class="error"></p>
+  </div>
+
+  <div id="roleScreen" class="screen hidden">
+    <h2>Rollen anzeigen</h2>
+    <p>Spieler: <span id="roleName"></span></p>
+    <div id="roleInfo" class="role-info"></div>
+    <button id="nextRoleBtn">Zeige Rolle / Nächster</button>
+  </div>
+
+  <div id="votingScreen" class="screen hidden">
+    <h2>Abstimmung</h2>
+    <p>Du bist dran, <strong><span id="votingName"></span></strong></p>
+    <label for="voteInput">Dein Verdacht:</label><br />
+    <input type="text" id="voteInput" placeholder="Name eingeben" />
+    <button id="voteBtn">Abstimmen</button>
+  </div>
+
+  <div id="resultScreen" class="screen hidden">
+    <h2>Ergebnis</h2>
+    <div id="resultText"></div>
+    <button id="playAgainBtn">Neues Spiel</button>
+  </div>
+
+<script src="main.js"></script>
+</body>
+</html>
