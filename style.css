@@ -1,0 +1,130 @@
+/* Dunkles Lila Design */
+
+body {
+  background-color: #1e1337;
+  color: #c7a9ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0; padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1#logo {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  margin-bottom: 30px;
+  color: #b78cff;
+  user-select: none;
+  text-shadow: 0 0 10px #a07bff;
+}
+
+#main-menu,
+#role-screen,
+#voting-screen,
+#result-screen {
+  background-color: #2b1d58;
+  border-radius: 12px;
+  padding: 30px 40px;
+  width: 320px;
+  box-shadow: 0 0 15px #7f61d3;
+  text-align: center;
+}
+
+input[type="text"], input[type="number"], select {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 10px 0 20px 0;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  background-color: #3a2a6a;
+  color: #d7cfff;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #8c74ff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  padding: 10px 20px;
+  margin: 12px 0;
+  cursor: pointer;
+  font-size: 1.1rem;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b9a7ff;
+}
+
+#player-list {
+  margin-bottom: 12px;
+  text-align: left;
+  max-height: 140px;
+  overflow-y: auto;
+  border: 1px solid #6a529f;
+  border-radius: 6px;
+  padding: 8px;
+  background-color: #3b2d6e;
+}
+
+#player-list div {
+  padding: 4px 8px;
+  border-bottom: 1px solid #5a4690;
+  font-size: 1rem;
+  color: #d6c7ff;
+}
+
+#player-list div:last-child {
+  border-bottom: none;
+}
+
+#role-name {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  user-select: none;
+}
+
+#role-info {
+  font-size: 1.8rem;
+  color: #e9d7ff;
+  margin-bottom: 20px;
+  white-space: pre-line;
+  user-select: none;
+}
+
+#vote-name {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  user-select: none;
+}
+
+#vote-label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+#error-msg {
+  color: #ff6060;
+  min-height: 24px;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.label-inline {
+  display: inline-block;
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+.hidden {
+  display: none !important;
+}
